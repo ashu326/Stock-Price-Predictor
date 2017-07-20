@@ -1,3 +1,4 @@
+#svm classifier 
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -36,7 +37,7 @@ def predict_price(dates, prices, x):
 
 	return lin_clf.predict(x)[0] , rbf_clf.predict(x)[0] 
 
-get_data('ttm.csv')
+get_data('ttm.csv')#tata motors data
 print predict_price(dates, prices, 20) 
 
 
